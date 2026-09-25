@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Playground | CodeVerse</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .interactive {
+            width: 90%;
+            margin: 50px auto;
+        }
+
+        .interactive h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2563eb;
+        }
+
+        .box {
+            background: #fff;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .1);
+            text-align: center;
+        }
+
+        .box button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            background: #2563eb;
+            color: white;
+            cursor: pointer;
+        }
+
+        .box button:hover {
+            background: #1d4ed8;
+        }
+
+        .box img {
+            width: 140px;
+            height: 140px;
+             display:block;
+             margin:auto;
+            object-fit: contain;
+            transition: .3s;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        #count {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0 20px;
+        }
+
+        footer {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">💻 CodeVerse</div>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="languages.html">Languages</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="Interactive.html" class="active">Interactive</a></li>
+                <li><a href="api.html">API Explorer</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="interactive">
+        <h1>Interactive Programming Playground</h1>
+
+        <!-- Counter -->
+        <div class="box">
+            <h2>Increment / Decrement Counter</h2>
+            <button onclick="decrease()">-</button>
+            <span id="count">0</span>
+            <button onclick="increase()">+</button>
+        </div>
+
+        <!-- Background -->
+        <div class="box">
+            <h2>Change Background Colour</h2>
+            <select onchange="changeColor(this.value)">
+                <option value="#f5f7fb">Default</option>
+                <option value="white">White</option>
+                <option value="#dbeafe">Blue</option>
+                <option value="#dcfce7">Green</option>
+                <option value="#fef3c7">Yellow</option>
+                <option value="#fce7f3">Pink</option>
+            </select>
+        </div>
+
+        <!-- Zoom -->
+        <div class="box">
+            <h2>Zoom Image</h2>
+            <img src="images/javascript.svg" id="zoomImage" alt="Zoomable Tech Logo" onmouseover="zoomIn()" onmouseout="zoomOut()">
+        </div>
+
+        <!-- Image Switcher -->
+        <div class="box">
+            <h2>Programming Logo Gallery</h2>
+            <img src="images/html.svg" id="slider" alt="Programming Logo Slider">
+            <br><br>
+            <button onclick="previousImage()">Previous</button>
+            <button onclick="nextImage()">Next</button>
+        </div>
+
+        <!-- Show Hide -->
+        <div class="box">
+            <h2>Programming Fact</h2>
+            <button onclick="toggleFact()">Show / Hide Fact</button>
+            <p id="fact" style="display:none;margin-top:20px;">
+               💡 Did you know? The first computer programmer was <strong>Ada Lovelace</strong>, who wrote the first algorithm in 1843—long before modern computers existed!
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>💻 CodeVerse</h3>
+            <p>Learn, Explore and Build with Programming Languages.</p>
+            <p>&copy; 2026 CodeVerse. All Rights Reserved.Made by Prakash</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

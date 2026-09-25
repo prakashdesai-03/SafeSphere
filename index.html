@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeVerse | Learn Programming Languages</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            💻 CodeVerse
+        </div>
+
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="languages.html">Languages</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="Interactive.html">Interactive</a></li>
+            <li><a href="api.html">API Explorer</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Learn Programming Languages</h1>
+        <p>
+            Start your programming journey with HTML, CSS,
+            JavaScript, Python, Java and many more.
+            Explore tutorials, videos, interactive examples,
+            and live API demonstrations.
+        </p>
+        <a href="languages.html" class="btn">Explore Languages</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="images/programmer.svg" alt="Programmer Learning Code">
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about">
+    <h2>What is Programming?</h2>
+    <p>
+        Programming is the process of writing instructions
+        that tell a computer how to perform tasks.
+        Programming languages allow developers to build
+        websites, mobile applications, games,
+        artificial intelligence systems and much more.
+    </p>
+</section>
+
+<!-- ================= LANGUAGES ================= -->
+
+<section class="languages">
+    <h2>Popular Programming Languages</h2>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="images/html.svg" alt="HTML">
+            <h3>HTML</h3>
+            <p>HTML is used to create the structure of web pages.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/css.svg" alt="CSS">
+            <h3>CSS</h3>
+            <p>CSS is used to design beautiful websites.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/javascript.svg" alt="JavaScript">
+            <h3>JavaScript</h3>
+            <p>JavaScript adds interactivity and dynamic features.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/python.svg" alt="Python">
+            <h3>Python</h3>
+            <p>Python is beginner-friendly and widely used in AI and Data Science.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/java.svg" alt="Java">
+            <h3>Java</h3>
+            <p>Java is used for enterprise software and Android development.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+        <!-- Show Hide -->
+        <div class="interactive-card">
+            <h3>📚 Programming Fact</h3>
+            <button onclick="toggleFact()">Show / Hide</button>
+            <p id="fact" style="display:none; margin-top:15px;">
+                JavaScript was created in just 10 days by Brendan Eich in 1995.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+    <h2>Ready to Become a Programmer?</h2>
+    <p>Explore tutorials, videos, interactive demos and live projects.</p>
+    <a href="languages.html" class="btn">Start Learning</a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+ <footer>
+        <div class="footer-content">
+            <h3>💻 CodeVerse</h3>
+            <p>Learn, Explore and Build with Programming Languages.</p>
+            <p>© 2026 CodeVerse. All Rights Reserved.Made by Prakash</p>
+        </div>
+    </footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
