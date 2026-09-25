@@ -113,5 +113,11 @@
     canvas, svg {
         max-width: 100%;
         height: auto;
+       canvas, svg {
+        max-width: 100%;
+        height: auto;
+          canvas, svg {
+        max-width: 100%;
+        height: auto;
     }
 }
